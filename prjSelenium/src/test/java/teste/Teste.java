@@ -13,15 +13,11 @@ public class Teste {
 	static WebDriver driver;
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-
-	
 		System.setProperty("webdriver.chrome.driver", "Y:/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().fullscreen();
 		driver.get("https://www.youtube.com");
 	}
-
-	
 
 	@Test
 	public void test() {
